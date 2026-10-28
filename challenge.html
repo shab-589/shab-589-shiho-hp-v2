@@ -46,7 +46,7 @@ h2 small{font-family:var(--latin);font-size:13px;letter-spacing:.3em;color:var(-
 ul.check{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
 ul.check li{display:flex;gap:12px;align-items:flex-start}
 ul.check li::before{content:"";flex:0 0 12px;height:12px;margin-top:.7em;background:var(--gold);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%)}
-.do{display:grid;grid-template-columns:1fr 150px;gap:16px;align-items:center}
+.do{display:block}
 .do img{width:100%;mix-blend-mode:multiply}
 .do dl{margin:0;display:flex;flex-direction:column;gap:14px}
 .do dt{font-weight:700}
@@ -55,7 +55,7 @@ ul.check li::before{content:"";flex:0 0 12px;height:12px;margin-top:.7em;backgro
 blockquote{margin:0;background:var(--card);border:1px solid var(--line);padding:18px 22px;font-size:16px;line-height:1.85}
 blockquote.short{font-weight:700;font-size:18px;color:var(--ink)}
 blockquote cite{display:block;text-align:right;font-style:normal;font-weight:400;font-size:14px;color:var(--sub);margin-top:6px}
-.about{display:grid;grid-template-columns:120px 1fr;gap:20px;align-items:center}
+.about{display:block;border-left:2px solid var(--gold);padding-left:20px}
 .about img{width:100%;mix-blend-mode:multiply}
 .about p{margin:0}
 .name{font-family:var(--latin);letter-spacing:.2em;font-size:24px;font-weight:600}
@@ -71,7 +71,7 @@ footer a{color:var(--ink)}
 @media (max-width:480px){
   .do{grid-template-columns:1fr}
   .do img{width:140px;justify-self:center;order:-1}
-  .about{grid-template-columns:90px 1fr}
+  
   .meta span{padding:8px 12px;font-size:16px}
 }
 @media (prefers-reduced-motion:reduce){.cta{transition:none}}
@@ -94,8 +94,7 @@ html,body{margin:0;overflow-x:hidden}
   <a class="back" href="/">← SHIHO｜この世は、お遊戯会</a>
 
   <header class="frame">
-    <div class="eyebrow">100 CHALLENGE</div>
-    <img class="hero-img" src="/img/challenge-alien.jpg" alt="金色の線で描かれた、瞑想する宇宙人">
+    <div class="eyebrow">100 SESSIONS</div>
     <p class="title-sub">100人の“面白い”発見チャレンジ</p>
     <h1>あなたの“面白い”、<br>見つけさせてください</h1>
     <p class="lead">何でもぶつけていい、物差しなしの60分。<br>モヤモヤも喜怒哀楽も吐き出して、あなたの“面白い”と、動き出す一歩を一緒に見つける個人セッションです。</p>
@@ -124,7 +123,6 @@ html,body{margin:0;overflow-x:hidden}
         <div><dt>“面白い”を言葉にする</dt><dd>整っていないところ、人間臭いところにこそ、あなたらしさがあります。話しているなかで見えたものを、そのままお伝えします。</dd></div>
         <div><dt>次の一歩を見つける</dt><dd>モヤモヤを整理して、明日から動ける一歩を一緒に考えます。</dd></div>
       </dl>
-      <img src="/img/challenge-ufo.jpg" alt="光を照らすUFOのイラスト">
     </div>
   </section>
 
@@ -143,11 +141,10 @@ html,body{margin:0;overflow-x:hidden}
   <section>
     <h2><small>PROFILE</small>SHIHOについて</h2>
     <div class="about">
-      <img src="/img/challenge-galaxy.jpg" alt="金色の銀河のイラスト">
       <div>
         <div class="name">SHIHO</div>
         <div class="role">面白プロデューサー／この世は、お遊戯会</div>
-        <p>わたし自身、整えようと向き合いながら、どこかで気持ちに蓋をしていました。だからこそ、喜怒哀楽ごと受け止められる場をつくっています。<br>好奇心と、ちょっと宇宙人的？な視点で、あなたの“面白い”を見つけて、次の一歩を一緒に考えます。</p>
+        <p>わたし自身、整えようと向き合いながら、どこかで気持ちに蓋をしていました。だからこそ、喜怒哀楽ごと受け止められる場をつくっています。<br>好奇心と、ちがう角度からの視点で、あなたの“面白い”を見つけて、次の一歩を一緒に考えます。</p>
       </div>
     </div>
     <p class="concept">無難でも生きていける。<br>でも、もっと面白く生きられる。</p>
