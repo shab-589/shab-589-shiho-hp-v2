@@ -3,172 +3,130 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>100人の“面白い”発見チャレンジ｜SHIHO</title>
-<meta name="description" content="自分では気づけない魅力を、SHIHOの目線から言葉にしてお伝えする個人セッション（Zoom・60分・無料）。">
-<meta property="og:title" content="100人の“面白い”発見チャレンジ｜SHIHO">
-<meta property="og:description" content="自分では気づけない魅力を、SHIHOの目線から言葉にしてお伝えする個人セッション（Zoom・60分・無料）。">
+<title>100人チャレンジ｜動けない理由が、言葉になる60分｜SHIHO</title>
+<meta name="description" content="100人と1対1でお話しするチャレンジ。物差しを持たずに全部聞いて、違う角度から返し、次の一歩を一緒に決める60分（無料・Zoom）。">
+<meta property="og:title" content="100人チャレンジ｜動けない理由が、言葉になる60分｜SHIHO">
+<meta property="og:description" content="100人と1対1でお話しするチャレンジ。物差しを持たずに全部聞いて、違う角度から返し、次の一歩を一緒に決める60分（無料・Zoom）。">
 <meta property="og:type" content="website">
-<meta property="og:image" content="/img/challenge-alien.jpg">
+<meta property="og:image" content="/img/shiho-top.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Ccircle cx=%2216%22 cy=%2216%22 r=%227%22 fill=%22none%22 stroke=%22%230F1115%22 stroke-width=%222%22/%3E%3Cellipse cx=%2216%22 cy=%2216%22 rx=%2214%22 ry=%224.5%22 transform=%22rotate(-20 16 16)%22 fill=%22none%22 stroke=%22%230F1115%22 stroke-width=%222%22/%3E%3Ccircle cx=%2227%22 cy=%227%22 r=%222.5%22 fill=%22%23D4AF4F%22/%3E%3C/svg%3E">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Shippori+Mincho:wght@400;500;700;800&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&amp;family=Shippori+Mincho:wght@400;500;600;800&amp;display=swap" rel="stylesheet">
 <style>
-/* 生成りの紙に紺と金。1カラムで縦に読む案内状。ホームページと同じ世界観で単一テーマ */
-:root{
-  --paper:#F7F3EA; --card:#FFFDF8; --ink:#1E2A4A; --sub:#4A5470;
-  --gold:#B8975A; --gold-soft:#E2C98F; --line:#E4D8BE;
-  --mincho:'Shippori Mincho','Hiragino Mincho ProN','Yu Mincho',serif;
-  --latin:'Cinzel','Times New Roman',serif;
-  color-scheme:light;
-}
-*{box-sizing:border-box}
-body{background:var(--paper);color:var(--ink);font-family:var(--mincho);font-size:17px;line-height:1.9;padding-inline:20px}
-.wrap{max-width:640px;margin:0 auto;padding-block:40px 64px;display:flex;flex-direction:column;gap:72px}
-.frame{border:1px solid var(--gold);outline:2px solid var(--gold);outline-offset:6px;padding:40px 24px 36px;margin:8px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:18px;background:var(--paper)}
-.eyebrow{font-family:var(--latin);letter-spacing:.35em;color:var(--gold);font-size:14px}
-.hero-img{width:min(220px,60%);mix-blend-mode:multiply;margin-block:-8px -4px}
-h1{font-size:clamp(28px,7vw,40px);line-height:1.5;font-weight:800;margin:0;text-wrap:balance}
-.title-sub{font-size:16px;color:var(--sub);margin:0}
-.lead{margin:0;max-width:30em}
-.meta{display:flex;flex-wrap:wrap;justify-content:center;background:var(--ink);color:var(--paper);font-weight:700;font-size:18px}
-.meta span{padding:10px 18px}
-.meta span+span{border-left:1px solid var(--gold)}
-.meta .free{color:var(--gold-soft)}
-.progress{font-size:15px;color:var(--sub);display:flex;align-items:baseline;gap:8px}
-.progress b{font-family:var(--latin);font-size:30px;color:var(--gold);font-weight:600}
-.cta{display:inline-block;background:var(--gold);color:#fff;text-decoration:none;font-weight:700;font-size:18px;padding:16px 40px;letter-spacing:.08em;border:1px solid var(--gold);transition:background .2s,color .2s}
-.cta:hover{background:var(--paper);color:var(--ink)}
-.cta:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
-.note{font-size:13px;color:var(--sub);margin:0}
-section{display:flex;flex-direction:column;gap:20px}
-h2{margin:0;font-size:24px;font-weight:800;display:flex;flex-direction:column;gap:2px}
-h2 small{font-family:var(--latin);font-size:13px;letter-spacing:.3em;color:var(--gold);font-weight:400}
-ul.check{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
-ul.check li{display:flex;gap:12px;align-items:flex-start}
-ul.check li::before{content:"";flex:0 0 12px;height:12px;margin-top:.7em;background:var(--gold);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%)}
-.do{display:block}
-.do img{width:100%;mix-blend-mode:multiply}
-.do dl{margin:0;display:flex;flex-direction:column;gap:14px}
-.do dt{font-weight:700}
-.do dd{margin:0;color:var(--sub);font-size:15px}
-.voices{display:flex;flex-direction:column;gap:14px}
-blockquote{margin:0;background:var(--card);border:1px solid var(--line);padding:18px 22px;font-size:16px;line-height:1.85}
-blockquote.short{font-weight:700;font-size:18px;color:var(--ink)}
-blockquote cite{display:block;text-align:right;font-style:normal;font-weight:400;font-size:14px;color:var(--sub);margin-top:6px}
-.about{display:block;border-left:2px solid var(--gold);padding-left:20px}
-.about img{width:100%;mix-blend-mode:multiply}
-.about p{margin:0}
-.name{font-family:var(--latin);letter-spacing:.2em;font-size:24px;font-weight:600}
-.role{font-size:14px;color:var(--sub)}
-.concept{border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);padding:14px 4px;text-align:center;font-weight:700;margin-top:4px!important}
-ol.flow{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:0;counter-reset:f}
-ol.flow li{counter-increment:f;display:flex;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px dashed var(--line)}
-ol.flow li::before{content:counter(f);font-family:var(--latin);color:var(--gold);font-size:22px;width:20px;flex:none}
-.end{text-align:center;align-items:center}
-.end p{margin:0}
-footer{text-align:center;font-size:14px;color:var(--sub)}
-footer a{color:var(--ink)}
-@media (max-width:480px){
-  .do{grid-template-columns:1fr}
-  .do img{width:140px;justify-self:center;order:-1}
-  
-  .meta span{padding:8px 12px;font-size:16px}
-}
-@media (prefers-reduced-motion:reduce){.cta{transition:none}}
-.back{align-self:flex-start;font-size:14px;color:var(--sub);text-decoration:none;margin-bottom:-48px}
-.back:hover{color:var(--ink)}
-.nw{white-space:nowrap}
-@media (max-width:480px){.progress{flex-direction:column;align-items:center;gap:0}.progress .sep{display:none}h1{font-size:26px}}
+body{margin:0;background:#F7F3EA}
+a{color:#1E2A4A}a:hover{color:#8C6D33}
 </style>
 <style>
 html,body{margin:0;overflow-x:hidden}
-
-.v-desk>div,.v-mob>div{margin:0 auto}
-@media (max-width: 760px){.v-desk{display:none} .v-mob{display:block}}
-
+img{max-width:100%}
+@media (max-width:640px){
+ h1{font-size:25px!important;letter-spacing:0!important;text-wrap:wrap!important}
+ h2{font-size:26px!important}
+ section[style*="margin: 0 auto"], section > div[style*="margin: 0 auto"]{padding-top:44px!important;padding-bottom:36px!important}
+ header nav{gap:14px!important;font-size:13px!important}
+ header nav a:last-child{padding:8px 14px!important}
+}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
-<div class="wrap">
-  <a class="back" href="/">← SHIHO｜この世は、お遊戯会</a>
 
-  <header class="frame">
-    <div class="eyebrow">100 SESSIONS</div>
-    <p class="title-sub">100人の“面白い”発見チャレンジ</p>
-    <h1>何でもぶつけていい、<br>物差しなしの60分</h1>
-    <p class="lead">モヤモヤも喜怒哀楽も吐き出して、動き出す一歩を一緒に見つける個人セッションです。</p>
-    <div class="meta"><span>Zoom</span><span>60分</span><span class="free" data-price-short="">無料</span></div>
-    <p class="note" data-price-note="">〜11/30｜100人まで無料でお受けしています</p>
-    <div class="progress"><span class="nw">セッション実施 <b>42</b> / 100人</span><span class="sep">　｜　</span><span class="nw">ご予約 <b>53</b>人</span></div>
-    <a class="cta" href="https://forms.gle/vLvXnginLia8Ek5aA" target="_blank" rel="noopener">申込フォームへ</a>
-    <p class="note">日程はフォーム送信後にご相談します</p>
-  </header>
+<div style="background: #F7F3EA; color: #1E2A4A; font-family: 'Shippori Mincho', 'Yu Mincho', serif; line-height: 1.9; font-size: 16px">
 
-  <section>
-    <h2><small>FOR YOU</small>こんな方へ</h2>
-    <ul class="check">
-      <li>動きたいのに動けない、変わりたいのに変われない</li>
-      <li>やりたいことが分からない／多すぎて整理できない</li>
-      <li>「ちゃんとしなきゃ」と、どこかで気持ちに蓋をしている気がする</li>
-      <li>自分の魅力や強みが、自分ではよくわからない</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2><small>SESSION</small>60分でやること</h2>
-    <div class="do">
-      <dl>
-        <div><dt>何でも吐き出す</dt><dd>物差しなし、喜怒哀楽ごと話してOK。どこに飛ぶ話でも大丈夫です。</dd></div>
-        <div><dt>あなたらしさを言葉にする</dt><dd>整っていないところ、人間臭いところにこそ、あなたらしさがあります。話しているなかで見えたものを、そのままお伝えします。</dd></div>
-        <div><dt>次の一歩を見つける</dt><dd>モヤモヤを整理して、明日から動ける一歩を一緒に考えます。</dd></div>
-      </dl>
-    </div>
-  </section>
-
-  <section>
-    <h2><small>VOICE</small>受けてくださった方の声</h2>
-    <div class="voices">
-      <blockquote>客観的にみた自分を知ることができました！<cite>― はるさん</cite></blockquote>
-      <blockquote>知りたい事、やりたい事、行きたいところが多過ぎて、多動で落ち着かない自分を責める部分がありましたが、それが悪い事ではない事に気づかせてもらいました。<cite>― なおこさん</cite></blockquote>
-      <blockquote>自分では数か月前とさほど変わっていないつもりでいたので、「すごく変わった。軽くなった」と言われてとても驚いた。<cite>― sakuraさん</cite></blockquote>
-      <blockquote>より俯瞰してみようとおもった、マイナスはダメじゃないって少し思えた<cite>― CONSONさん</cite></blockquote>
-      <blockquote>カードセッションは眠らせていたけど、また始めようと思いました！</blockquote>
-      <blockquote>型が無いセッションで、かつ引き出し上手で話しやすかった。</blockquote>
-    </div>
-  </section>
-
-  <section>
-    <h2><small>PROFILE</small>SHIHOについて</h2>
-    <div class="about">
-      <div>
-        <div class="name">SHIHO</div>
-        <div class="role">面白プロデューサー／この世は、お遊戯会</div>
-        <p>わたし自身、整えようと向き合いながら、どこかで気持ちに蓋をしていました。だからこそ、喜怒哀楽ごと受け止められる場をつくっています。<br>好奇心と、ちがう角度からの視点で、あなたらしさを見つけて、次の一歩を一緒に考えます。</p>
-      </div>
-    </div>
-    <p class="concept">無難でも生きていける。<br>でも、もっと面白く生きられる。</p>
-  </section>
-
-  <section>
-    <h2><small>FLOW</small>お申し込みの流れ</h2>
-    <ol class="flow">
-      <li>申込フォームを送信</li>
-      <li>SHIHOから日程のご連絡</li>
-      <li>Zoomで60分のセッション</li>
-    </ol>
-  </section>
-
-  <section class="end">
-    <p>残り58人。<br>お話しできるのを楽しみにしています。</p>
-    <a class="cta" href="https://forms.gle/vLvXnginLia8Ek5aA" target="_blank" rel="noopener">申込フォームへ</a>
-  </section>
-
-  <footer>
-    <a href="/">SHIHOのホームページ</a>　｜　Instagram <a href="https://www.instagram.com/sh1ho_589/" target="_blank" rel="noopener">@sh1ho_589</a>
-  </footer>
+<header style="border-bottom: 1px solid #DDD3BE">
+<div style="max-width: 960px; margin: 0 auto; padding: 20px 24px; display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 12px">
+<a href="/" style="text-decoration: none; font-family: 'Cinzel', serif; font-weight: 700; letter-spacing: 8px; font-size: 20px">SHIHO</a>
+<span style="font-size: 13px; color: #6B7085">100人チャレンジ ｜ 2026.10 〜 11.30</span>
 </div>
+</header>
 
+<section style="max-width: 960px; margin: 0 auto; padding: 88px 24px 64px; display: flex; flex-direction: column; gap: 28px">
+<div style="font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 5px; color: #8C6D33">SHIHO'S 100 CHALLENGE</div>
+<h1 style="margin: 0; font-weight: 800; font-size: 52px; line-height: 1.45; letter-spacing: 2px; text-wrap: balance">動けない理由が、<br>言葉になる60分。</h1>
+<p style="margin: 0; font-size: 17px; color: #333B52; max-width: 36em">100人と1対1でお話しするチャレンジをしています。ひとりの内観だけでは見つからないものも、外から見ると気づけます。物差しを持たずに全部聞いて、質問しながら悩みを深掘りし、違う角度から返します。最後に、次の一歩を一緒に決めます。</p>
+<div style="display: flex; flex-wrap: wrap; gap: 0; border: 1px solid #1E2A4A; align-self: flex-start">
+<div style="padding: 12px 24px; border-right: 1px solid #1E2A4A"><div style="font-size: 12px; color: #6B7085">時間</div><div style="font-weight: 800; font-size: 18px">60分</div></div>
+<div style="padding: 12px 24px; border-right: 1px solid #1E2A4A"><div style="font-size: 12px; color: #6B7085">場所</div><div style="font-weight: 800; font-size: 18px">Zoom</div></div>
+<div style="padding: 12px 24px; background: #1E2A4A; color: #F7F3EA"><div style="font-size: 12px; color: #D9BE86">参加費</div><div style="font-weight: 800; font-size: 18px">無料</div></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px; max-width: 560px">
+<div style="display: flex; justify-content: space-between; font-size: 14px"><span>これまでにお話しした人</span><span style="font-family: 'Cinzel', serif; font-weight: 700"><span style="font-size: 24px; color: #8C6D33" data-done>42</span> / 100</span></div>
+<div aria-hidden="true" style="height: 6px; background: #E8DCC2"><div data-bar style="width: 42%; height: 6px; background: #B8975A"></div></div>
+<div style="font-size: 12.5px; color: #6B7085">ご予約 <span data-booked>53</span>人（<span data-date>2026年10月28日</span>時点）</div>
+</div>
+<a href="https://forms.gle/vLvXnginLia8Ek5aA" style="align-self: flex-start; background: #1E2A4A; color: #F7F3EA; text-decoration: none; padding: 16px 32px; font-weight: 800; letter-spacing: 1px">申込フォームへ</a>
+</section>
+
+<section style="background: #FFFDF8; border-top: 1px solid #DDD3BE; border-bottom: 1px solid #DDD3BE">
+<div style="max-width: 960px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 5px; color: #8C6D33">IN 60 MINUTES</div>
+<h2 style="margin: 0; font-size: 32px; font-weight: 800; line-height: 1.5">60分でやること</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px">
+<div style="border-top: 2px solid #1E2A4A; padding-top: 20px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'Cinzel', serif; color: #8C6D33; letter-spacing: 3px; font-size: 13px">STEP 1</div>
+<h3 style="margin: 0; font-size: 21px; font-weight: 800">全部出す</h3>
+<p style="margin: 0; font-size: 15px; color: #333B52">物差しなしで、何でも話してOK。うまく話せなくても、話が飛んでも大丈夫です。</p>
+</div>
+<div style="border-top: 2px solid #1E2A4A; padding-top: 20px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'Cinzel', serif; color: #8C6D33; letter-spacing: 3px; font-size: 13px">STEP 2</div>
+<h3 style="margin: 0; font-size: 21px; font-weight: 800">深掘りする</h3>
+<p style="margin: 0; font-size: 15px; color: #333B52">質問しながら悩みを掘り下げ、違う角度から見えたことをお伝えします。必要なときはアドバイスも。</p>
+</div>
+<div style="border-top: 2px solid #1E2A4A; padding-top: 20px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'Cinzel', serif; color: #8C6D33; letter-spacing: 3px; font-size: 13px">STEP 3</div>
+<h3 style="margin: 0; font-size: 21px; font-weight: 800">次の一歩を決める</h3>
+<p style="margin: 0; font-size: 15px; color: #333B52">小さくていいので、明日からできることをひとつ決めて終わります。</p>
+</div>
+</div>
+</div>
+</section>
+
+<section style="max-width: 960px; margin: 0 auto; padding: 80px 24px 40px; display: flex; flex-wrap: wrap; gap: 40px">
+<div style="flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 5px; color: #8C6D33">FOR YOU</div>
+<h2 style="margin: 0; font-size: 32px; font-weight: 800; line-height: 1.5">こんな方へ</h2>
+</div>
+<ul style="flex: 2 1 420px; min-width: 0; margin: 0; padding: 0; list-style: none">
+<li style="border-top: 1px solid #DDD3BE; padding: 16px 0; font-size: 17px; font-weight: 600">動きたいのに動けない、変わりたいのに変われない</li>
+<li style="border-top: 1px solid #DDD3BE; padding: 16px 0; font-size: 17px; font-weight: 600">やりたいことが分からない／多すぎて整理できない</li>
+<li style="border-top: 1px solid #DDD3BE; padding: 16px 0; font-size: 17px; font-weight: 600">「ちゃんとしなきゃ」と、気持ちにふたをしている気がする</li>
+<li style="border-top: 1px solid #DDD3BE; border-bottom: 1px solid #DDD3BE; padding: 16px 0; font-size: 17px; font-weight: 600">自分の魅力や強みが、自分ではよく分からない</li>
+</ul>
+</section>
+
+<section style="max-width: 960px; margin: 0 auto; padding: 56px 24px 80px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 5px; color: #8C6D33">VOICE</div>
+<h2 style="margin: 0; font-size: 32px; font-weight: 800; line-height: 1.5">受けてくださった方の声</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px">
+<blockquote style="margin: 0; background: #FFFDF8; border: 1px solid #DDD3BE; padding: 24px; display: flex; flex-direction: column; gap: 10px"><p style="margin: 0">自分に関する質問に、答えられなかったこと。自分の事って自分1人では分からない事に気付きました。</p><cite style="font-style: normal; font-size: 13px; color: #6B7085">― なおこさん</cite></blockquote>
+<blockquote style="margin: 0; background: #FFFDF8; border: 1px solid #DDD3BE; padding: 24px; display: flex; flex-direction: column; gap: 10px"><p style="margin: 0">自分では数か月前とさほど変わっていないつもりでいたので、「すごく変わった。軽くなった」と言われてとても驚いた。</p><cite style="font-style: normal; font-size: 13px; color: #6B7085">― sakuraさん</cite></blockquote>
+<blockquote style="margin: 0; background: #FFFDF8; border: 1px solid #DDD3BE; padding: 24px; display: flex; flex-direction: column; gap: 10px"><p style="margin: 0">より俯瞰してみようとおもった、マイナスはダメじゃないって少し思えた</p><cite style="font-style: normal; font-size: 13px; color: #6B7085">― CONSONさん</cite></blockquote>
+<blockquote style="margin: 0; background: #FFFDF8; border: 1px solid #DDD3BE; padding: 24px; display: flex; flex-direction: column; gap: 10px"><p style="margin: 0">何回かDMでお話しさせていただいたこともありますが、初めてお話しする緊張というのがなく話しやすい印象でした。</p><cite style="font-style: normal; font-size: 13px; color: #6B7085">― はるさん</cite></blockquote>
+</div>
+</section>
+
+<section style="background: #1E2A4A; color: #F7F3EA">
+<div style="max-width: 960px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: column; gap: 22px">
+<h2 style="margin: 0; font-size: 30px; font-weight: 800; line-height: 1.6">申し込みの流れ</h2>
+<ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px">
+<li style="border-top: 1px solid #5B6684; padding-top: 14px"><span style="font-family: 'Cinzel', serif; color: #D9BE86">1</span>　フォームから申し込む</li>
+<li style="border-top: 1px solid #5B6684; padding-top: 14px"><span style="font-family: 'Cinzel', serif; color: #D9BE86">2</span>　日程を調整してZoomのURLを受け取る</li>
+<li style="border-top: 1px solid #5B6684; padding-top: 14px"><span style="font-family: 'Cinzel', serif; color: #D9BE86">3</span>　60分お話しする（顔出しなしでもOK）</li>
+</ol>
+<p style="margin: 0; font-size: 14px; color: #E6E1D4">最後に、90分の個人セッション（初回3,000円）のご案内をすることがあります。お断りいただいて大丈夫です。</p>
+<a href="https://forms.gle/vLvXnginLia8Ek5aA" style="align-self: flex-start; background: #D9BE86; color: #1E2A4A; text-decoration: none; padding: 16px 32px; font-weight: 800; letter-spacing: 1px">申込フォームへ</a>
+</div>
+</section>
+
+<footer style="max-width: 960px; margin: 0 auto; padding: 32px 24px; font-size: 13px; color: #6B7085; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px">
+<span>SHIHO ｜ この世は、お遊戯会</span><a href="/">トップページへ</a>
+</footer>
+</div>
 
 </body>
 </html>
