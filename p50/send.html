@@ -1,0 +1,9 @@
+<!doctype html><meta charset="utf-8"><meta name="robots" content="noindex"><title>send</title><p id=s>loading</p>
+<script>
+(async()=>{const s=document.getElementById('s');const bufs=[];
+for(let i=1;i<=7;i++){const r=await fetch(i+'.jpg',{cache:'no-store'});bufs.push(await r.arrayBuffer());}
+s.textContent='loaded '+bufs.length;let acked=false;
+window.addEventListener('message',e=>{if(e.data==='p50ack'){acked=true;s.textContent='acked';}});
+const t=setInterval(()=>{if(acked){clearInterval(t);return;}try{window.opener.postMessage({p50:bufs.map(b=>b.slice(0))},'https://www.instagram.com');s.textContent='sent';}catch(err){s.textContent='err '+err;}},1000);
+})();
+</script>
